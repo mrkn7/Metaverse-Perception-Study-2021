@@ -1,5 +1,3 @@
-# Metaverse-Perception-Study-2021
-
 # Perceptions of the Metaverse at the Peak of the Hype Cycle: A Cross-Sectional Study (2021)
 
 This repository contains the dataset and analysis scripts for the study titled **"Perceptions of the Metaverse at the Peak of the Hype Cycle: A Cross-Sectional Study Among Turkish University Students"**.
