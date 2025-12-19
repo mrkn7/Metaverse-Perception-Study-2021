@@ -69,26 +69,12 @@ The Metaverse gained unprecedented global attention in late 2021, promising imme
 
 ```
 .
-├── README.md                          # This file
-├── LICENSE                            # CC-BY-4.0 License
+├── README.md                          
+├── LICENSE                           
 ├── data/
-│   └── metaverse_survey_data.csv     # Anonymized dataset (N=381)
+│   └── data.csv   
 ├── scripts/
 │   ├── 01_data_cleaning.R            # Data preparation & quality checks
-│   ├── 02_descriptive_analysis.R     # Frequencies & distributions
-│   ├── 03_bivariate_analysis.R       # Fisher's Exact Tests & effect sizes
-│   ├── 04_logistic_regression.R      # Binary logistic regression model
-│   └── 05_visualization.R             # Publication-ready figures
-├── figures/
-│   ├── figure_1_familiarity.png      # Metaverse familiarity
-│   ├── figure_2_gender_fear.png      # Gender × fear associations
-│   ├── figure_3_perception_effects.png # Effect sizes
-│   └── figure_4_regression_forest.png  # Logistic regression forest plot
-└── outputs/
-    ├── table_1_demographics.csv       # Demographics summary
-    ├── table_2_bivariate.csv          # Bivariate associations
-    ├── table_3_perception.csv         # Perception variable effects
-    └── table_4_regression.csv         # Logistic regression results
 
 ```
 
@@ -100,7 +86,6 @@ The Metaverse gained unprecedented global attention in late 2021, promising imme
 
 - **Collection Period:** December 6-20, 2021
 - **Sample Size:** N = 381 (17 excluded during data cleaning)
-- **Institution:** Middle East Technical University (METU), Ankara, Turkey
 - **Sampling:** Convenience snowball sampling via student networks
 - **Anonymity:** All personally identifiable information removed
 - **Missing Data:** <5%; listwise deletion applied
@@ -166,15 +151,6 @@ The Metaverse gained unprecedented global attention in late 2021, promising imme
   - Hosmer-Lemeshow goodness-of-fit test
 - **Effect Reporting:** Odds Ratios (OR) with 95% confidence intervals
 
-### Missing Data
-- Little's MCAR test conducted
-- Minimal missing data (<5%)
-- Listwise deletion applied
-
-### Multiple Comparisons
-- Bonferroni correction applied where applicable
-- FDR control considered for exploratory analyses
-
 ---
 
 ## How to Reproduce the Analysis
@@ -209,27 +185,13 @@ library(sjPlot); library(broom); library(vcd); library(logistf);
 library(rms); library(car)
 ```
 
-### Running the Analysis
 
-```r
-# Set working directory
-setwd("path/to/metaverse_study")
-
-# Run analysis scripts in order
-source("scripts/01_data_cleaning.R")
-source("scripts/02_descriptive_analysis.R")
-source("scripts/03_bivariate_analysis.R")
-source("scripts/04_logistic_regression.R")
-source("scripts/05_visualization.R")
-
-# All results saved to outputs/ and figures/
-```
 
 ### Data Loading
 
 ```r
 # Load anonymized dataset
-data <- read.csv("data/metaverse_survey_data.csv")
+data <- read.csv("data/data.csv")
 
 # Basic checks
 dim(data)           # 381 rows, 20 columns
@@ -350,23 +312,6 @@ colSums(is.na(data))
 
 
 
----
-
-## Authors
-
-**Mehmet Ali Erkan**
-- Department of Statistics
-- Middle East Technical University (METU)
-- Email: maerkan@metu.edu.tr
-- ORCID: [Your ORCID]
-
-**Halil Eren Koçak**
-- Department of Cognitive Science
-- Middle East Technical University (METU)
-- Email: eren.kocak@metu.edu.tr
-- ORCID: [Your ORCID]
-
----
 
 ## License
 
@@ -387,7 +332,7 @@ See [LICENSE](LICENSE) file for details.
 
 ## Data Availability
 
-The anonymized dataset is available in this repository: `data/metaverse_survey_data.csv`
+The anonymized dataset is available in this repository: `data/dataset.csv`
 
 All analysis scripts are available in `scripts/` directory and can be run to reproduce all results.
 
@@ -395,14 +340,6 @@ For questions about data or analysis, please contact the corresponding author.
 
 ---
 
-## Changelog
-
-**v1.0.0** (December 2024)
-- Initial public release
-- Anonymized dataset and analysis scripts
-- Preprint available on arXiv
-
----
 
 ## Contributing
 
@@ -410,8 +347,3 @@ This is a completed research project. However, if you find errors or have sugges
 
 ---
 
-## Questions?
-
-For methodological questions: Contact corresponding author
-For technical issues: Open an GitHub issue
-For collaboration: Email the authors directly
