@@ -83,6 +83,7 @@ The file `scripts/cleaning_merging_translation_visualization.R` handles the prep
 
 ```
 # To run the visualization script in RStudio or Console
+
 source("scripts/cleaning_merging_translation_visualization.R")
 ```
 
@@ -93,7 +94,7 @@ The notebook `notebooks/all_analysis.ipynb` contains the inferential statistics:
 * **Odds Ratio** calculation and diagnostics.
 
 ```
-**Dependencies:**
+# Dependencies
 `pandas`, `numpy`, `scipy`, `statsmodels`, `matplotlib`, `seaborn`
 
 # Install dependencies
@@ -106,14 +107,7 @@ jupyter notebook notebooks/all_analysis.ipynb
 ## 📜 Citation
 If you use this dataset or code in your research, please cite the following preprint:
 
-```
-@article{metaverse2021erkan,
-  title={Perceptions of the Metaverse at the Peak of the Hype Cycle: A Cross-Sectional Study Among Turkish University Students},
-  author={Erkan, Mehmet Ali and Koçak, Halil Eren},
-  journal={arXiv preprint},
-  year={2021}
-}
-```
+
 
 ## License
 
