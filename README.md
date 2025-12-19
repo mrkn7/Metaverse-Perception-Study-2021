@@ -41,11 +41,10 @@ Conducted in **December 2021**—during the global peak of interest in the Metav
 ```
 ├── data/
 │   ├── raw_survey_data.csv          
-│   └── processed_data.csv           
+│   └── data.csv           
 ├── scripts/
-│   └── cleaning_merging_translation_visualization.R  
-├── notebooks/
-│   └── all_analysis.ipynb          
+│   └── cleaning_merging_translation_visualization.R
+├   └── all_analysis.ipynb         
 ├── figures/                      
 ├── paper/                          
 ├── README.md                      
