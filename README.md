@@ -106,6 +106,17 @@ jupyter notebook notebooks/all_analysis.ipynb
 ## 📜 Citation
 If you use this dataset or code in your research, please cite the following preprint:
 
+```
+@misc{erkan2025perceptionsmetaversepeakhype,
+      title={Perceptions of the Metaverse at the Peak of the Hype Cycle: A Cross-Sectional Study Among Turkish University Students}, 
+      author={Mehmet Ali Erkan and Halil Eren Koçak},
+      year={2025},
+      eprint={2512.17750},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY},
+      url={https://arxiv.org/abs/2512.17750}, 
+}
+```
 
 
 ## License
